@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2D Street Fighter Lite</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <h1>Street Fighter Lite (Browser)</h1>
+
+    <section class="hud">
+      <div class="player-hud">
+        <span>P1</span>
+        <div class="health-track">
+          <div id="p1Health" class="health-fill p1"></div>
+        </div>
+      </div>
+
+      <div class="timer" id="timer">60</div>
+
+      <div class="player-hud">
+        <span>P2</span>
+        <div class="health-track">
+          <div id="p2Health" class="health-fill p2"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="arena" class="arena" aria-label="2D fighting arena">
+      <div id="player1" class="fighter player1"></div>
+      <div id="player2" class="fighter player2"></div>
+    </section>
+
+    <section class="controls">
+      <div>
+        <h2>Player 1</h2>
+        <p>A / D = move</p>
+        <p>W = jump</p>
+        <p>F = attack</p>
+      </div>
+      <div>
+        <h2>Player 2</h2>
+        <p>◀ / ▶ = move</p>
+        <p>▲ = jump</p>
+        <p>L = attack</p>
+      </div>
+    </section>
+
+    <p id="message" class="message">Fight!</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
