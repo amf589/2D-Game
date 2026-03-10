@@ -7,7 +7,7 @@ const timerEl = document.getElementById('timer');
 const messageEl = document.getElementById('message');
 
 const arenaWidth = () => arena.clientWidth;
-const gravity = -0.8;
+const gravity = 0.8;
 const roundTime = 60;
 
 const player1 = {
